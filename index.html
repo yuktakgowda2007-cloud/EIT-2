@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yukta Gowda | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:url('BACKGROUND.jpg') center/cover fixed;
+color:white;
+}
+
+.overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+z-index:-1;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+background:rgba(0,0,0,0.4);
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:24px;
+font-weight:bold;
+}
+
+.logo img{
+width:50px;
+height:50px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid white;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+nav ul li a:hover{
+color:#00d9ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.profile{
+width:230px;
+height:230px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 0 25px #00d9ff;
+}
+
+.hero h1{
+font-size:4rem;
+margin-top:20px;
+}
+
+.hero h2{
+color:#00d9ff;
+margin:15px 0;
+}
+
+.btn{
+display:inline-block;
+padding:12px 28px;
+background:#00d9ff;
+color:black;
+font-weight:bold;
+border-radius:30px;
+text-decoration:none;
+margin-top:20px;
+}
+
+section{
+padding:90px 10%;
+}
+
+section h2{
+font-size:2.5rem;
+text-align:center;
+margin-bottom:40px;
+}
+
+.card{
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.bar{
+height:12px;
+background:#444;
+border-radius:20px;
+overflow:hidden;
+}
+
+.bar span{
+display:block;
+height:100%;
+background:#00d9ff;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:15px;
+border:none;
+border-radius:10px;
+}
+
+button{
+padding:15px;
+border:none;
+background:#00d9ff;
+font-weight:bold;
+cursor:pointer;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+}
+
+.socials i{
+font-size:28px;
+margin:0 10px;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<nav>
+<div class="logo">
+<img src="YOUR_PHOTO.jpeg">
+<span>YG</span>
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#certificates">certificates</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="home" class="hero">
+<div>
+<img src="YOUR_PHOTO.jpeg" class="profile">
+
+<h1>Yukta Gowda</h1>
+
+<h2 id="typing"></h2>
+
+<p>
+Electronics & Communication Engineering Student
+<br>
+</p>
+
+
+
+<div class="card">
+<p>
+To build a successful career in engineering and technology
+while continuously learning and contributing to innovative projects.
+</p>
+
+<br>
+
+<h3>Education</h3>
+<p>School: RMS INTERNATIONAL SCHOOL</p>
+<p>PU: DEEKSHA PU COLLEGE</p>
+<p>B.E. Electronics & Communication Engineering</p>
+Bangalore Institute of Technology
+</div>
+</section>
+
+<section id="achievements">
+<h2>Achievements</h2>
+
+<div class="grid">
+
+<div class="card">
+<i class="fas fa-trophy fa-2x"></i>
+<h3>Academic Excellence</h3>
+</div>
+
+<div class="card">
+<i class="fas fa-certificate fa-2x"></i>
+<h3>Certifications</h3>
+</div>
+
+</div>
+</section>
+
+<section id="activities">
+<h2>Extracurricular Activities</h2>
+
+<div class="grid">
+
+<div class="card">Technical Clubs</div>
+<div class="card">Volunteer Programs</div>
+<div class="card">Sports Activities</div>
+<div class="card">College Events</div>
+
+</div>
+</section>
+
+<section id="skills">
+<h2>Projects & Skills</h2>
+
+<div class="skill">
+<p>HTML</p>
+<div class="bar"><span style="width:95%"></span></div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="bar"><span style="width:90%"></span></div>
+</div>
+
+<div class="skill">
+<p>JavaScript</p>
+<div class="bar"><span style="width:85%"></span></div>
+</div>
+
+<div class="skill">
+<p>Python</p>
+<div class="bar"><span style="width:80%"></span></div>
+</div>
+
+<br>
+
+<div class="grid">
+
+<div class="card">
+<h3>IoT Project</h3>
+<p>Sensor based monitoring project.</p>
+</div>
+
+<div class="card">
+<h3>ECE Mini Project</h3>
+<p>Innovation and electronics project.</p>
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2>Certifcates</h2>
+
+<div class="Certificates">
+<img src="PHOTO1.jpeg">
+<img src="PHOTO2.jpeg">
+<img src="PHOTO 3.jpeg">
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<h1>E-mail: yuktakgowda2007@gmail.com</h1>
+<h1>Number: 7975215985</h1>
+</section>
+
+<footer>
+
+<br>
+
+<p>© 2026 Yukta Gowda | Portfolio Website</p>
+
+</footer>
+
+<script>
+
+const words=[
+"ECE Student",
+];
+
+let i=0;
+let j=0;
+let current="";
+let deleting=false;
+
+function type(){
+
+const typing=document.getElementById("typing");
+
+if(!deleting){
+current=words[i].substring(0,j++);
+typing.innerHTML=current;
+
+if(j>words[i].length){
+deleting=true;
+setTimeout(type,1000);
+return;
+}
+}
+else{
+current=words[i].substring(0,j--);
+typing.innerHTML=current;
+
+if(j===0){
+deleting=false;
+i++;
+
+if(i===words.length){
+i=0;
+}
+}
+}
+
+setTimeout(type,deleting?60:120);
+}
+
+type();
+
+function sendMessage(e){
+e.preventDefault();
+alert("Message Sent Successfully!");
+}
+
+</script>
+
+</body>
+</html>
